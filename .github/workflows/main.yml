@@ -1,0 +1,22 @@
+# Workflow name
+name: Vikas Kumar
+
+# Event trigger: run when code is pushed to main branch
+on:
+  push:
+    branches:
+      - main
+
+# Jobs section
+jobs:
+  # Job name
+  demo:
+    
+    # Runner (machine executing the job)
+    runs-on: ubuntu-latest
+
+    # Steps inside the job
+    steps:
+      # Step 1
+      - name: Greetings
+        run: echo "Hello from Vikas"
