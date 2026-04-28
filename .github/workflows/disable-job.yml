@@ -1,0 +1,24 @@
+# Workflow name
+name: Disable Workflow
+
+# Event trigger
+on:
+  push:
+    branches:
+      - main
+
+# Jobs section
+jobs:
+  # Job name
+  disable:
+    
+    # Runner machine
+    runs-on: ubuntu-latest
+
+    # Steps inside the job
+    steps:
+      # Step 1
+      - name: Disable It
+        
+        # Command to run
+        run: echo "Disable workflow"
